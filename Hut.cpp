@@ -3,7 +3,7 @@
 #include <graphics.h>
 main()
 {
-    int gd, gm, s;
+    int gd, gm;
     gd = DETECT;
     initgraph(&gd, &gm, "C:\\TC\\BGI");
     line(100, 20, 20, 100);

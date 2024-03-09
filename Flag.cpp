@@ -3,7 +3,7 @@
 #include <graphics.h>
 main()
 {
-    int gd, gm, s;
+    int gd, gm;
     gd = DETECT;
     initgraph(&gd, &gm, "C:\\TC\\BGI");
     setfillstyle(SOLID_FILL, 6);
