@@ -1,24 +1,23 @@
 #include <stdio.h>
 #include <conio.h>
 #include <graphics.h>
-#include <math.h>
+#include <Math.h>
+
 main()
 {
     int gd, gm;
     gd = DETECT;
     initgraph(&gd, &gm, "C:\\TC\\BGI");
 
+line(10,100,460,100);
+line(100,5,100,370);
 
-// Set the amplitude and frequency of the sine wave.
-  double amplitude = 100.0;
-  double frequency = 1.0;
-
-  // Draw the sine wave.
-  for (double x = 0; x < 640; x += 1.0)
-  {
-    double y = amplitude * sin(frequency * x);
-    putpixel(x, y, WHITE);
-  }
+float y;
+for (int x = 0; x <=360; x++)
+{
+  y=80*sin(x*3.14/180);
+  putpixel(100+x,ceil(100-y),3);
+}
 
         getch();
     closegraph();
